@@ -24,7 +24,8 @@
 
   <h2>How it uses YouTube API Services</h2>
   <ul>
-    <li>The channel owner signs in once with Google OAuth (scope: <code>youtube.upload</code>).</li>
+    <li>The channel owner signs in with Google OAuth to their own account (YouTube upload + read).</li>
+    <li><code>channels.list</code> (mine=true) confirms uploads go to the right channel.</li>
     <li><code>videos.insert</code> uploads a finished Short to the owner's channel, with a title, description and creator credit.</li>
     <li>No other users, no public sign-up, no access to anyone else's account or data.</li>
   </ul>
