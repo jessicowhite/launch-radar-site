@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Launch Radar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">Launch Radar</a>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+<main>
+  <h1>Launch Radar</h1>
+  <p class="muted">A personal publishing tool for one GTAVI clips channel.</p>
+
+  <div class="card">
+    <p>Launch Radar is a single-user desktop tool run by the owner of the YouTube channel
+    <a href="https://www.youtube.com/@gta6clipsshd">@gta6clipsshd</a>. It finds popular public
+    GTAVI gameplay clips, formats them as vertical Shorts with on-screen credit to the original
+    creator, and, after an editorial review step, uploads them to the owner's <strong>own</strong>
+    YouTube channel.</p>
+  </div>
+
+  <h2>How it uses YouTube API Services</h2>
+  <ul>
+    <li>The channel owner signs in once with Google OAuth (scope: <code>youtube.upload</code>).</li>
+    <li><code>videos.insert</code> uploads a finished Short to the owner's channel, with a title, description and creator credit.</li>
+    <li>No other users, no public sign-up, no access to anyone else's account or data.</li>
+  </ul>
+
+  <h2>Credit to creators</h2>
+  <p>Every upload names the original streamer on screen and in the description, with a link to their channel.
+  Creators can ask for any clip to be removed and it will be taken down. See the <a href="terms.html">Terms</a>.</p>
+
+  <p class="muted">This tool uses YouTube API Services. By using it you agree to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See our
+  <a href="privacy.html">Privacy Policy</a>.</p>
+</main>
+<footer>
+  <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+  Uses YouTube API Services · Not affiliated with YouTube, Google or Rockstar Games.
+</footer>
+</body>
+</html>
